@@ -1,0 +1,54 @@
+doctype html
+html(ng-app="inDayApp")
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap-theme.min.css')
+	body
+		block content
+			header
+				div.container
+					div.row
+						div.col-md-3
+							img(src="/images/logo_mini.png").logo
+							h1.title HoliDB
+						div.col-md-offset-8.col-md-1
+							img.btn-findByDate
+			div.container
+				div.mainSpace
+					div(ng-view).content
+		div.footer
+			div.container
+				div.row
+					div.col-md-3
+						img(src="/images/logo.png").logo_foo
+					div.col-md-9
+						h2 Some links to socials
+
+
+		//- vendor
+		script(src="/bower_components/angular/angular.js")
+		script(src="/bower_components/jquery/dist/jquery.min.js")
+		script(src="/bower_components/bootstrap/dist/js/bootstrap.min.js")
+		script(src="/bower_components/angular-route/angular-route.js")
+		script(src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js")
+		script(src="/bower_components/angular-bootstrap/ui-bootstrap.js")
+		script(src="/bower_components/ng-table/ng-table.js")
+		script(src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js")
+		
+		
+		//- app
+		script(src='/javascripts/app/app.js')
+
+		//- services
+		script(src='/javascripts/app/services/dayServices.js')
+
+		//- directives
+
+
+		//- controllers
+		script(src='/javascripts/app/controllers/main.js')
+		script(src='/javascripts/app/controllers/admin.js')
+		script(src='/javascripts/app/controllers/modalAdd.js')
+

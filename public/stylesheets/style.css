@@ -1,0 +1,101 @@
+
+html, body {
+	background-color: #F7F7F7 !important;
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Exo+2:100,500&subset=latin,cyrillic);
+
+header { 
+	width: 100%;
+	height: 80px;
+	background-color: #5D6371;
+	font-family: 'Exo 2', sans-serif !important;
+	font-weight: 500;
+	-webkit-box-shadow: inset 0px 3px 11px 1px rgba(50, 50, 50, 0.65);
+	-moz-box-shadow:    inset 0px 3px 11px 1px rgba(50, 50, 50, 0.65);
+	box-shadow:         inset 0px 3px 11px 1px rgba(50, 50, 50, 0.65);
+}
+
+.logo { 
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	float: left;
+	position: relative;
+	top: 15px;
+	margin: 0 15px 0 0;
+	-webkit-box-shadow: 0px 3px 11px 1px rgba(50, 50, 50, 0.65);
+	-moz-box-shadow:    0px 3px 11px 1px rgba(50, 50, 50, 0.65);
+	box-shadow:         0px 3px 11px 1px rgba(50, 50, 50, 0.65);
+}
+
+.title { 
+	color: #F7F7F7;
+}
+
+.btn-findByDate {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: 15px;
+}
+
+.content {
+	margin: 15px 0 15px 0;
+	min-height: 600px;
+	padding: 0 25px 25px 25px;
+	background-color: #FFFFFF;
+	-webkit-box-shadow: 0px 3px 11px 1px rgba(50, 50, 50, 0.65);
+	-moz-box-shadow:    0px 3px 11px 1px rgba(50, 50, 50, 0.65);
+	box-shadow:         0px 3px 11px 1px rgba(50, 50, 50, 0.65);
+}
+
+.ng-table-rowselected tr {
+    cursor: pointer;
+}
+
+.controls {
+	height: 50px;
+}
+
+.controls button {
+	position: relative;
+	top: 15px;
+}
+
+.modalWnd {
+	padding: 0 25px 25px 25px;
+}
+
+
+.footer {
+	-webkit-box-shadow: inset 0px 3px 11px 1px rgba(50, 50, 50, 0.65);
+	-moz-box-shadow:    inset 0px 3px 11px 1px rgba(50, 50, 50, 0.65);
+	box-shadow:         inset 0px 3px 11px 1px rgba(50, 50, 50, 0.65);
+	font-family: 'Exo 2', sans-serif !important;
+	font-weight: 500;
+	/*width: 100%;*/
+	height: 250px;
+	background-color: #5D6371;
+	font-family: 'Exo 2', sans-serif !important;
+	font-weight: 500; 
+	color: #F7F7F7;
+}
+
+.logo_foo {
+	position: relative;
+	top: 30px;
+	-webkit-box-shadow: 0px 3px 11px 1px rgba(50, 50, 50, 0.65);
+	-moz-box-shadow:    0px 3px 11px 1px rgba(50, 50, 50, 0.65);
+	box-shadow:         0px 3px 11px 1px rgba(50, 50, 50, 0.65);
+	border-radius: 100px;
+	width: 180px;
+	height: 180px;
+}
+
+.sort-desc, .sort-asc {
+	background-color: #6CBEDF !important;
+}
+
+

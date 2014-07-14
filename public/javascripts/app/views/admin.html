@@ -1,0 +1,46 @@
+<div class="row">
+	<div class="col-md-12">
+		<h1>Управление контентом</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<alert class="check-element sample-show-hide" ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)" ng-show="showMsg == true" >{{alert.msg}}</alert>
+	</div>
+</div>
+<div class="row controls">
+	<div class="col-md-8">
+		<button ng-click="openModal()" class="btn btn-success  btn-xs">Добавить запись</button>
+		<button ng-click="" class="btn btn-primary  btn-xs" ng-show="edit">Изменить запись</button>
+		<button ng-click="deleteDays()" class="btn btn-danger  btn-xs" ng-show="delete">Удалить записи</button>
+	</div>
+	<div class="col-md-4">
+		<button ng-click="tableParams.sorting({name: ''})" class="btn btn-default btn-xs ">Сбросить сортировку</button>
+		<button ng-click="tableParams.filter({})" class="btn btn-default btn-xs">Сбросить фильтры</button>
+		<button ng-click="refresh()" class="btn btn-default btn-xs">Обновить</button>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<table ng-table="tableParams" show-filter="true" class="table ng-table-rowselected table-bordered table-hover">
+			<tr ng-repeat="data in $data"
+				ng-click="data.$selected = !data.$selected; changeSelection(data)"
+				ng-class="{'active': data.$selected}">
+				<td data-title="'Имя праздника'" sortable="'name'" filter="{ 'name': 'text' }">
+					{{data.name}}
+				</td>
+				<td data-title="'Дата'" sortable="'date'" filter="{ 'date': 'text' }">
+					{{data.date}}
+				</td>
+				<td data-title="'Описание'" sortable="'description'" filter="{ 'description': 'text' }">
+					{{data.description}}
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+
+<!-- ng-show="showMsg == true" -->
+
+<!-- pull-right -->
